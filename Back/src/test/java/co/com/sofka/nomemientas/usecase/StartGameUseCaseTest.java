@@ -14,6 +14,7 @@ import co.com.sofka.domain.game.values.PlayerNickname;
 import co.com.sofka.domain.generic.DomainEvent;
 
 
+import co.com.sofka.nomemientas.usecase.game.StartGameUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

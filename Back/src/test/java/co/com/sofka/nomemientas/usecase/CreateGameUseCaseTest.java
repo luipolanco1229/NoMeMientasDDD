@@ -13,6 +13,7 @@ import co.com.sofka.domain.game.events.GameCreated;
 import co.com.sofka.domain.game.values.Money;
 import co.com.sofka.domain.game.values.PlayerId;
 import co.com.sofka.domain.game.values.PlayerNickname;
+import co.com.sofka.nomemientas.usecase.game.CreateGameUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package co.com.sofka.nomemientas.usecase;
+package co.com.sofka.nomemientas.usecase.game;
 
 import co.com.sofka.business.generic.BusinessException;
 import co.com.sofka.business.generic.UseCase;
