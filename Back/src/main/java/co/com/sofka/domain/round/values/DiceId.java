@@ -3,15 +3,15 @@ package co.com.sofka.domain.round.values;
 import co.com.sofka.domain.generic.Identity;
 
 public class DiceId extends Identity {
-    private DiceId(String id){
-        super(id);
+    private DiceId(Integer id){
+        super(id.toString());
     }
 
     public DiceId(){
 
     }
 
-    public static DiceId of(String id){
+    public static DiceId of(Integer id){
 
         return new DiceId(id);
     }
