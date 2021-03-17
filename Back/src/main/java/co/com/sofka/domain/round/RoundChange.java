@@ -17,10 +17,8 @@ public class RoundChange extends EventChange {
         }
         );
         apply((ThrewDice event)-> {
-            for (var i = 1; i <= 6; i++) {
-                round.dices.put(DiceId.of(i), new Dice(DiceId.of(i)));
-                round.dices.get(i).setFace(event.facesOfDices().get(i));
-            }
+          event.facesOfDices().forEach(((diceId, face) -> round.dices.put(diceId, new Dice(diceId))));
+          event.facesOfDices().forEach((diceId, face) -> round.dices.get(diceId).setFace(face));
         }
 
                 );

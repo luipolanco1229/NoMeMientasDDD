@@ -42,14 +42,14 @@ class CreateGameUseCaseTest {
                 .getDomainEvents();
 
         var gameCreated = (GameCreated)events.get(0);
-        var addPlayerForLUisa = (AddedPlayer)events.get(2);
+        var addPlayerForLuisa = (AddedPlayer)events.get(2);
         var addPlayerForSebas = (AddedPlayer)events.get(1);
 
         Assertions.assertTrue(Objects.nonNull(gameCreated.getGameId().value()));
 
-        Assertions.assertEquals("Luisa Polanco", addPlayerForLUisa.getPlayerNickname().value());
-        Assertions.assertEquals(5000L, addPlayerForLUisa.getMoney().value());
-        Assertions.assertEquals("xxxxx", addPlayerForLUisa.getPlayerId().value());
+        Assertions.assertEquals("Luisa Polanco", addPlayerForLuisa.getPlayerNickname().value());
+        Assertions.assertEquals(5000L, addPlayerForLuisa.getMoney().value());
+        Assertions.assertEquals("xxxxx", addPlayerForLuisa.getPlayerId().value());
 
         Assertions.assertEquals("Sebas Davila", addPlayerForSebas.getPlayerNickname().value());
         Assertions.assertEquals(6000L, addPlayerForSebas.getMoney().value());
